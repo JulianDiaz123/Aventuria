@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-image: url(/assets/img/Imagen-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+/*Nombre de la empresa*/
+.titulo-fondo {
+  background-image: linear-gradient(to right, rgb(7, 83, 45), rgb(1, 161, 1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo-fondo img {
+  width: 150px;
+  padding-block: 30px;
+  filter: drop-shadow(10px 7px 10px orange);
+}
+.titulo-fondo a {
+  text-decoration: none;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: -2px 1px 3px rgba(58, 38, 0, 0.4);
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 94, 0),
+    rgb(255, 208, 0)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+/*Menu de navegación*/
+.menu {
+  background-color: gray;
+  border: 5px solid rgb(63, 63, 63);
+}
+.lista-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 18px 0;
+  flex-wrap: wrap;
+}
+.lista-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.lista-menu a:hover {
+  background-color: rgb(82, 82, 82);
+  border-radius: 10px;
+}
+.lista-menu a:active {
+  box-shadow: -1px 2px 10px rgb(0, 0, 0);
+  padding: 12px;
+}
+/*Texto*/
+.contenedor {
+  width: 80%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  font-size: larger;
+  margin: 50px 150px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 117, 35, 0.9),
+    rgba(78, 179, 247, 0.9)
+  );
+  border-radius: 30px;
+  color: black;
+}
+.contenedor h4 {
+  margin: 0 10px;
+  padding: 0;
+}
+.contenedor p {
+  margin: 10px;
+  padding: 0;
+}
+.contenedor a {
+  text-decoration: none;
+  color: blue;
+}
+.margen {
+  background-image: linear-gradient(to right, rgb(7, 83, 45), rgb(1, 161, 1));
+  height: 100px;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .titulo-fondo img {
+    display: none;
+  }
+
+  .contenedor {
+    margin: 10px 0px;
+    width: auto;
+  }
+  .contenedor p {
+    margin-inline: 10px;
+  }
+}
